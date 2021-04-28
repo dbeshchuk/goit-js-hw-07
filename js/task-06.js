@@ -1,7 +1,7 @@
 const validationInput = document.querySelector('input#validation-input');
 
 function colorChange() {
-  if (validationInput.value.length == validationInput.dataset.length) {
+  if (validationInput.value.length === Number(validationInput.dataset.length)) {
     validationInput.classList.add('valid');
     validationInput.classList.remove('invalid');
   } else if (validationInput.value.length === 0) {
